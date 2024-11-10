@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    font-family: "poppins";
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-inline: auto;
+    padding: 10px 20px 20px;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom:20px ;
+    padding-top: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.right h2{
+    padding-bottom: 25px;
+}
+
+.right p{
+    padding-bottom: 15px;
+}
+
+.first,.second,.third{
+    position: relative;
+    padding: 0 30px;
+}
+
+.first::before,.second::before,.third::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100vw;
+}
+
+.first::before{background-color: rgb(255, 158, 13);}
+.second::before{background-color: rgb(10, 168, 136);}
+.third::before{background-color: rgb(39, 45, 64);}
+
+
+.btn1{
+    padding: 8px 25px;
+    border: none;
+    border-radius: 100vw;
+    background-color: rgb(255, 158, 13);
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2,.reload{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 100vw;
+    background-color:rgb(10, 168, 136) ;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+.inputs{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.span{
+    background-color: rgb(250, 215, 215);
+    margin-bottom: 15px;
+}
+
+
+
+.input1,.input2,.input4,.input5,.input6,.input3{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: inherit;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    font-size: 25px;
+    caret-color: rgb(10, 168, 136);
+}
+
+.disabled{
+    pointer-events: none;
+    opacity: .5;
+}
+
+/* inputs background classes */
+
+.inPlace{
+    background-color: rgb(255, 158, 13);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: inherit;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    font-size: 25px;
+    color: white;
+}
+.notInPlace{
+    background-color:rgb(10, 168, 136) ;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: inherit;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    font-size: 25px;
+    color: white;
+}
+.notExists{
+    background-color: rgb(3, 3, 5);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: inherit;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+    font-size: 25px;
+    color: white;
+}
+
+.fontsize{
+    font-size: 20px;
+    margin-right: 25px;
+    font-weight: bold;
+    display: block;
+    width: 60px;
+}
+
+.message{
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
+
+.position{
+    background-color: rgb(255, 158, 13);
+    color: white;
+    padding: 5px;
+}
+
+.reload{
+    margin-top: 50px;
+    background-color: rgb(39, 45, 64);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.left{
+    margin-bottom: 60px;
+}
+
+
+
+@media (max-width:700px){
+    .try{
+        margin-bottom: 20px;
+    }
+
+    .left .inputs span{
+        margin-right: 0px;
+    }
+    .left .inputs input{
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.hints{
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: rgba(10, 168, 136, 0.671);
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.hints span{
+    display: none;
+    
+    padding: 10px;
+    border-radius: 5px;
+}
